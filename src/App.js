@@ -5,6 +5,7 @@ import Help from "./Help";
 function App() {
     const [searchParams] = useSearchParams();
     const search = searchParams.get('search')
+    console.log("Search Param:", search); // Add this inside App
     if (search !== null) {
         const tokens = search.split(' ')
         if (tokens.length > 0) {
