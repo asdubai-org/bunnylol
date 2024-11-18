@@ -1,6 +1,6 @@
 # bunnylol
 
-Implementation of Facebook/Meta's bunnylol, running on `https://kev-inc.github.io/bunnylol/#/?search=`
+Implementation of Facebook/Meta's bunnylol, running on `https://asdubai-org.github.io/bunnylol/#/?search=`
 
 ## Commands available
 Command | Name | URL
@@ -32,7 +32,7 @@ The full list of commands can be found in `src/Commands.js`
 ```
 Search engine - bunnylol
 Shortcut - b
-URL with %s in place of query - https://kev-inc.github.io/bunnylol/#/?search=%s
+URL with %s in place of query - https://asdubai-org.github.io/bunnylol/#/?search=%s
 ```
 3. Click save, and set as the default search engine for your browser
 
