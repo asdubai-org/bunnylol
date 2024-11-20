@@ -11,7 +11,8 @@ const COMMANDS = {
     },
     ls: {
         name: "Looker Studio",
-        url: "https://lookerstudio.google.com/"
+        url: "https://lookerstudio.google.com/",
+        searchurl: "https://lookerstudio.google.com/navigation/reporting?search="
     },
     fb: {
         name: "Facebook",
