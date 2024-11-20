@@ -4,6 +4,11 @@ const COMMANDS = {
         url: "https://google.com/",
         searchurl: "https://www.google.com/search?q="
     },
+    c: {
+        name: "ASD Connect",
+        url: "https://connect.asdubai.org/",
+        searchurl: "https://connect.asdubai.org/search?keyword="
+    },
     fb: {
         name: "Facebook",
         url: "https://facebook.com/",
