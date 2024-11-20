@@ -1,10 +1,11 @@
+# .github/workflows/deploy.yml
+
 name: Deploy React App to GitHub Pages
 
 on:
   push:
     branches:
-      - main  # Change this if your default branch is different
-
+      - main  # Replace with your default branch if different
   workflow_dispatch:
 
 permissions:
@@ -13,27 +14,37 @@ permissions:
   id-token: write
 
 jobs:
-  build-and-deploy:
+  build:
+    name: Build React App
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
+      - name: Set up Node.js environment
         uses: actions/setup-node@v3
         with:
           node-version: '18.x'  # Use the Node.js version required by your project
 
-      - name: Install dependencies 📦
+      - name: Install dependencies
         run: npm ci
 
-      - name: Build the React app 🛠️
+      - name: Build the React app
         run: npm run build
 
-      - name: Deploy to GitHub Pages 🚀
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload production-ready build files
+        uses: actions/upload-pages-artifact@v1
         with:
-          publish_dir: ./build
-          # The following options ensure a clean deployment
-          force_orphan: true
-          keep_files: false
+          path: './build'  # Path to your React app build output
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages  # This can be any name; 'github-pages' is conventional
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
