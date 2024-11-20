@@ -9,6 +9,10 @@ const COMMANDS = {
         url: "https://connect.asdubai.org/",
         searchurl: "https://connect.asdubai.org/search?keyword="
     },
+    ls: {
+        name: "Looker Studio",
+        url: "https://lookerstudio.google.com/"
+    },
     fb: {
         name: "Facebook",
         url: "https://facebook.com/",
