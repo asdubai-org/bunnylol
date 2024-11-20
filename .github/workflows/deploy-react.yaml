@@ -32,19 +32,19 @@ jobs:
       - name: Build the React app
         run: npm run build
 
-      - name: Upload production-ready build files
-        uses: actions/upload-pages-artifact@v1
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
         with:
-          path: './build'  # Path to your React app build output
+          name: github-pages  # Artifact name must be 'github-pages'
+          path: ./build       # Path to your React app build output
 
   deploy:
     name: Deploy to GitHub Pages
     needs: build
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages  # This can be any name; 'github-pages' is conventional
-      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write
+      id-token: write
     steps:
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v4
