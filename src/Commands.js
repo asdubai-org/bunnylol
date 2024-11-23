@@ -72,7 +72,7 @@ const COMMANDS = {
     },
     it: {
         name: "IT Helpdesk - New Ticket",
-        url: "https://nexus.asdubai.org/web#id=&action=165&active_id=1&model=helpdesk.ticket&view_type=form&cids=1&menu_id=103"
+        url: "https://nexus.asdubai.org/helpdesk/it-support-1/submit"
     },
     DEFAULT: {
         name: "Default - Google Search",
