@@ -66,19 +66,13 @@ const COMMANDS = {
         name: "Google Calendar",
         url: "https://calendar.google.com/calendar/r"
     },
-    tr: {
-        name: 'Trello',
-        url: 'https://trello.com/'
+    o: {
+        name: "Odoo",
+        url: "https://odoo.nexus.orghttps://nexus.asdubai.org/web/login#tab_staff_2/"
     },
-    th: {
-        name: 'Thesaurus',
-        url: 'https://www.thesaurus.com/',
-        searchurl: 'https://www.thesaurus.com/browse/'
-    },
-    cineb: {
-        name: 'cineb.net',
-        url: 'https://cineb.net/',
-        searchurl: 'https://cineb.net/search/'
+    it: {
+        name: "IT Helpdesk - New Ticket",
+        url: "https://nexus.asdubai.org/web#id=&action=165&active_id=1&model=helpdesk.ticket&view_type=form&cids=1&menu_id=103"
     },
     DEFAULT: {
         name: "Default - Google Search",
