@@ -68,7 +68,7 @@ const COMMANDS = {
     },
     o: {
         name: "Odoo",
-        url: "https://odoo.nexus.orghttps://nexus.asdubai.org/web/login#tab_staff_2/"
+        url: "https://nexus.asdubai.org/web/login#tab_staff_2/"
     },
     it: {
         name: "IT Helpdesk - New Ticket",
