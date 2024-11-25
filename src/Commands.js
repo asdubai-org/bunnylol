@@ -74,6 +74,14 @@ const COMMANDS = {
         name: "IT Helpdesk - New Ticket",
         url: "https://nexus.asdubai.org/helpdesk/it-support-1/submit"
     },
+    psa: {
+        name: "Powerschool - Admin",
+        url: "https://powerschool.asdubai.org/admin/home.html"
+    },
+    pst: {
+        name: "Powerschool - Teacher",
+        url: "https://powerschool.asdubai.org/teachers/home.html"
+    },
     DEFAULT: {
         name: "Default - Google Search",
         url: "https://google.com/",
