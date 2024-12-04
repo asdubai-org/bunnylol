@@ -82,6 +82,11 @@ const COMMANDS = {
         name: "Powerschool - Teacher",
         url: "https://powerschool.asdubai.org/teachers/home.html"
     },
+    af: {
+        name: "Airflow",
+        url: "https://airflow.asdubai.org/",
+        searchurl: "https://airflow.asdubai.org/dagrun/list/?_flt_3_state="
+    },
     DEFAULT: {
         name: "Default - Google Search",
         url: "https://google.com/",
