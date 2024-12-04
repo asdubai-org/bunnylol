@@ -85,6 +85,11 @@ const COMMANDS = {
     af: {
         name: "Airflow",
         url: "https://airflow.asdubai.org/",
+        searchurl: "https://airflow.asdubai.org/home?search="
+    },
+    afs: {
+        name: "Airflow",
+        url: "https://airflow.asdubai.org/",
         searchurl: "https://airflow.asdubai.org/dagrun/list/?_flt_3_state="
     },
     DEFAULT: {
